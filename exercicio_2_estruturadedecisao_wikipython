@@ -1,0 +1,11 @@
+'''
+2) Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+'''
+zero = 0
+
+n = int(input("Digite um numero: "))
+
+if n > zero:
+  print("Positivo ")
+else:
+  print("Negativo")
