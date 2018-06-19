@@ -1,0 +1,18 @@
+'''
+18) Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+'''
+'''
+------ EXERCICIO ------
+------ LEGENDAS ------
+
+
+'''
+
+tamanho = float(input("Tamanho do arquivo (MB): "))
+velseg = float(input("Velocidade de download (Mbps): "))
+
+velmin = (velseg / 60)
+
+tempo = round(tamanho / velmin, 2)
+
+print("Tempo estimado de download: ", tempo,"minutos")
