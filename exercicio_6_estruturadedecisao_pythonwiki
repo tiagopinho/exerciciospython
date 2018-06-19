@@ -1,0 +1,19 @@
+'''
+4) Faça um Programa que leia três números e mostre o maior deles.
+'''
+
+n1 = int(input("N 1: "))
+n2 = int(input("N 2: "))
+n3 = int(input("N 3: "))
+
+
+if n1 > n2:
+  if n1 > n3:
+    print("Maior numero: ", n1)
+  else:
+    print("Maior numero: ", n3)
+else:
+  if n2 > n3:
+    print("Maior numero: ", n2)
+  else:
+    print("Maior numero: ", n3)
