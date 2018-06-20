@@ -1,0 +1,21 @@
+'''
+8) Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+'''
+
+p1 = int(input("Prod 1: "))
+p2 = int(input("Prod 2: "))
+p3 = int(input("Prod 3: "))
+if p1 == p2 == p3:
+  print("Todos tem o mesmo preço")
+else:
+  if p1 < p2:
+    if p1 < p3:
+      print("Produto 1")
+    else:
+      print("Produto 3")
+  else:
+    if p2 < p3:
+      print("Produto 2")
+    else:
+      print("Produto 3")
+
