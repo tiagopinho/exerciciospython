@@ -1,0 +1,27 @@
+'''
+9) Faça um Programa que leia três números e mostre-os em ordem decrescente.
+'''
+
+n1 = int(input("N 1: "))
+n2 = int(input("N 2: "))
+n3 = int(input("N 3: "))
+
+if n1 == n2 == n3:
+  print("Quando todos iguais não há ordenacao")
+else:
+  if n1 > n2 and n1 > n3:
+    if n3 > n2:
+      print(n1,n3,n2)
+    else:
+      print(n1,n2,n3)
+  elif n2 > n1 and n2 > n3:
+    if n1 > n3:
+      print(n2,n1,n3)
+    else:
+      print(n2,n3,n1)
+  else:
+    if n3 > n1 and n3 > n2:
+      if n1 > n2:
+        print(n3,n1,n2)
+      else:
+        print(n3,n2,n1)
