@@ -17,16 +17,28 @@ salario = int(input('Salario em R$: '))
 if salario <= 280:
   aumento = salario * 0.2
   total = aumento + salario
-  print(Salario com reajuste R$: ', total)
+  print('Salario antes do reajuste R$: ', salario)
+  print('Percentual de aumento: 20%')
+  print('Valor do reajuste R$: ', aumento)
+  print('Salario com reajuste R$: ', total)
 elif salario > 280 and salario <= 700:
   aumento = salario * 0.15
   total = aumento + salario
-  print(Salario com reajuste R$: ', total)
+  print('Salario antes do reajuste R$: ', salario)
+  print('Percentual de aumento: 15%')
+  print('Valor do reajuste R$: ', aumento)
+  print('Salario com reajuste R$: ', total)
 elif salario > 700 and salario <= 1500:
   aumento = salario * 0.10
   total = aumento + salario
-  print(Salario com reajuste R$: ', total)
+  print('Salario antes do reajuste R$: ', salario)
+  print('Percentual de aumento: 10%')
+  print('Valor do reajuste R$: ', aumento)
+  print('Salario com reajuste R$: ', total)
 elif salario > 1500:
   aumento = salario * 0.05
   total = aumento + salario
+  print('Salario antes do reajuste R$: ', salario)
+  print('Percentual de aumento: 5%')
+  print('Valor do reajuste R$: ', aumento)
   print('Salario com reajuste R$: ', total)
