@@ -1,0 +1,14 @@
+'''
+18) Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
+'''
+print('Insira as data no formato dd/mm/aaaa')
+print('---')
+
+d = int(input('Dia: '))
+m = int(input('Mes: '))
+a = int(input('Ano: '))
+
+if d > 31 or m > 12 or a <= 0:
+  print('Data invalida')
+else:
+  print('Data informada valida: ', d, '/', m, '/', a)
