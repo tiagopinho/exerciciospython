@@ -1,0 +1,10 @@
+'''
+23) Faça um Programa que peça um número e informe se o número é inteiro ou decimal. Dica: utilize uma função de arredondamento.
+'''
+
+n = eval(input('Digite um numero: '))
+
+if type(n) == int:
+  print('Esse número é inteiro.')
+else:
+  print('Esse número é decimal.')
