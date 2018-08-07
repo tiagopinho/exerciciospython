@@ -1,0 +1,61 @@
+'''
+24) Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+
+a) par ou ímpar;
+b) positivo ou negativo;
+c) inteiro ou decimal.
+'''
+
+n1 = eval(input("Digite o primeiro numero: "))
+n2 = eval(input("Digite o segundo numero: "))
+
+print('1-soma, 2-subtração, 3-produto, 4-divisão')
+
+op = int(input('Qual operação ? '))
+
+if op == 1:
+  soma = n1 + n2
+  print('Soma: ',soma)
+  if soma < 0:
+    print('Negativo')
+  else:
+    print('Positivo')
+  if type(soma) == float:
+    print('Decimal')
+  else:
+    print('Inteiro')
+elif op == 2:
+  sub = n1 - n2
+  print('Subtracao: ',sub)
+  if sub < 0:
+    print('Negativo')
+  else:
+    print('Positivo')
+  if type(sub) == float:
+    print('Decimal')
+  else:
+    print('Inteiro')
+elif op == 3:
+  prod = n1 * n2
+  print('Multiplicacao: ',prod)
+  if prod < 0:
+    print('Negativo')
+  else:
+    print('Positivo')
+  if type(prod) == float:
+    print('Decimal')
+  else:
+    print('Inteiro')
+elif op == 4:
+  div = n1 / n2
+  print('Divisao: ',div)
+  if div < 0:
+    print('Negativo')
+  else:
+    print('Positivo')
+  if type(div) == float:
+    print('Decimal')
+  else:
+    print('Inteiro')
+else:
+  print('Operacao invalida')
