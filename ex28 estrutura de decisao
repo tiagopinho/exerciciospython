@@ -1,0 +1,311 @@
+'''
+27) O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:
+
+                      Até 5 Kg           Acima de 5 Kg
+File Duplo      R$ 4,90 por Kg          R$ 5,80 por Kg
+Alcatra         R$ 5,90 por Kg          R$ 6,80 por Kg
+Picanha         R$ 6,90 por Kg          R$ 7,80 por Kg
+
+Para atender a todos os clientes, cada cliente poderá levar apenas um dos tipos de carne da promoção, porém não há limites para a quantidade de carne por cliente. Se compra for feita no cartão Tabajara o cliente receberá ainda um desconto de 5% sobre o total da compra. Escreva um programa que peça o tipo e a quantidade de carne comprada pelo usuário e gere um cupom fiscal, contendo as informações da compra: tipo e quantidade de carne, preço total, tipo de pagamento, valor do desconto e valor a pagar.
+'''
+
+print('-------------------------------------')
+print('1-File Duplo | 2-Alcatra | 3-Picanha')
+print('-------------------------------------')
+
+c1 = int(input('Digite a primeira carne: '))
+c2 = int(input('Digite a segunda carne: '))
+
+print('----------Pagamento-----------')
+print('1-Cartao Tabajara | 2-Outros')
+print('------------------------------')
+
+pgt = int(input('Digite o meio de pagamento: '))
+if pgt == 1:
+  if c1 == 1 and c2 == 2:
+    print('-------------------------------------')
+    qc1 = int(input('Digite a quantidade da primeira carne: '))
+    qc2 = int(input('Digite a quantidade da segunda carne: '))
+    if qc1 > 5 and qc2 > 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 5.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    elif qc1 > 5 and qc2 <= 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 6.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    elif qc2 > 5 and qc1 <= 5:
+      vc1 = qc1 * 5.8
+      vc2 = qc2 * 5.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    else:
+      vc1 = qc1 * 5.8
+      vc2 = qc2 * 6.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+  if c1 == 1 and c2 == 3:
+    print('-------------------------------------')
+    qc1 = int(input('Digite a quantidade da primeira carne: '))
+    qc2 = int(input('Digite a quantidade da segunda carne: '))
+    if qc1 > 5 and qc2 > 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 6.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    elif qc1 > 5 and qc2 <= 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    elif qc2 > 5 and qc1 <= 5:
+      vc1 = qc1 * 6.9
+      vc2 = qc2 * 5.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    else:
+      vc1 = qc1 * 5.8
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+  if c1 == 2 and c2 == 3:
+    print('-------------------------------------')
+    qc1 = int(input('Digite a quantidade da primeira carne: '))
+    qc2 = int(input('Digite a quantidade da segunda carne: '))
+    if qc1 > 5 and qc2 > 5:
+      vc1 = qc1 * 5.9
+      vc2 = qc2 * 6.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    elif qc1 > 5 and qc2 <= 5:
+      vc1 = qc1 * 5.9
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    elif qc2 > 5 and qc1 <= 5:
+      vc1 = qc1 * 6.8
+      vc2 = qc2 * 6.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+    else:
+      vc1 = qc1 * 6.8
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Pagamentro: Cartão Tabajara')
+      print('Valor do Desconto: ',desc)
+      print('Total a pagar: ',vcd)
+else:
+  if c1 == 1 and c2 == 2:
+    print('-------------------------------------')
+    qc1 = int(input('Digite a quantidade da primeira carne: '))
+    qc2 = int(input('Digite a quantidade da segunda carne: '))
+    if qc1 > 5 and qc2 > 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 5.9
+      vt = vc1 + vc2
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    elif qc1 > 5 and qc2 <= 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 6.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    elif qc2 > 5 and qc1 <= 5:
+      vc1 = qc1 * 5.8
+      vc2 = qc2 * 5.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    else:
+      vc1 = qc1 * 5.8
+      vc2 = qc2 * 5.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+  if c1 == 1 and c2 == 3:
+    print('-------------------------------------')
+    qc1 = int(input('Digite a quantidade da primeira carne: '))
+    qc2 = int(input('Digite a quantidade da segunda carne: '))
+    if qc1 > 5 and qc2 > 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 6.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    elif qc1 > 5 and qc2 <= 5:
+      vc1 = qc1 * 4.9
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    elif qc2 > 5 and qc1 <= 5:
+      vc1 = qc1 * 6.9
+      vc2 = qc2 * 5.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    else:
+      vc1 = qc1 * 5.8
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+  if c1 == 2 and c2 == 3:
+    print('-------------------------------------')
+    qc1 = int(input('Digite a quantidade da primeira carne: '))
+    qc2 = int(input('Digite a quantidade da segunda carne: '))
+    if qc1 > 5 and qc2 > 5:
+      vc1 = qc1 * 5.9
+      vc2 = qc2 * 6.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    elif qc1 > 5 and qc2 <= 5:
+      vc1 = qc1 * 5.9
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    elif qc2 > 5 and qc1 <= 5:
+      vc1 = qc1 * 6.8
+      vc2 = qc2 * 6.9
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
+    else:
+      vc1 = qc1 * 6.8
+      vc2 = qc2 * 7.8
+      vt = vc1 + vc2
+      desc = vt * 0.05
+      vcd = vt - desc
+      print('File Duplo: ',qc1,'kg')
+      print('Alcatra: ',qc2,'kg')
+      print('Valor total: ',vt)
+      print('Outros')
