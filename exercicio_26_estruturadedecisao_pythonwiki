@@ -1,0 +1,39 @@
+'''
+26) Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+a) Álcool:
+- até 20 litros, desconto de 3% por litro
+- acima de 20 litros, desconto de 5% por litro
+b) Gasolina:
+- até 20 litros, desconto de 4% por litro
+- acima de 20 litros, desconto de 6% por litro
+
+Escreva um algoritmo que leia o número de litros vendidos, 
+o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser 
+pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
+'''
+
+l = int(input('Quantos litros: '))
+tipo = input('G-Gasolina, A-Alcool')
+
+if tipo == 'g' or tipo == 'G':
+  v = l * 2.5
+  if l > 20:
+   dg6 = v * 0.06
+   vcd = v - dg6
+   print('Valor a ser pago: ',vcd)
+  else:
+    dg4 = v * 0.04
+    vcd = v - dg4
+    print('Valor a ser pago: ',vcd)
+elif tipo == 'a' or tipo == 'A':
+  v = l * 1.9
+  if l > 20:
+   da5 = v * 0.05
+   vcd = v - da5
+   print('Valor a ser pago: ',vcd)
+  else:
+   da3 = v * 0.03
+   vcd = v - da3
+   print('Valor a ser pago: ',vcd)
+else:
+  print('Combustivel Inexistente')
