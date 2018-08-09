@@ -1,0 +1,30 @@
+'''
+27) Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+
+                      Até 5 Kg           Acima de 5 Kg
+Morango         R$ 2,50 por Kg          R$ 2,20 por Kg
+Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg
+
+Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
+'''
+
+qtdmorango = int(input('Quantidade de Morango em Kg: '))
+qtdmaca = int(input('Quantidade de Maca em Kg: '))
+
+qtdkg = qtdmaca + qtdmorango
+
+if qtdkg <= 5:
+  vmorango = qtdmorango * 2.5
+  vmaca = qtdmaca * 1.8
+  vt = vmorango + vmaca
+  print('Valor total: ', vt)
+else:
+  vmorango = qtdmorango * 2.2
+  vmaca = qtdmaca * 1.5
+  vt = vmorango + vmaca
+  if qtdkg > 8 or vt > 25:
+    d = vt * 0.1
+    vcd = vt - d
+    print('Valor total: ', vcd)
+  else:
+    print('Valor total: ', vt)
