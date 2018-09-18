@@ -1,0 +1,17 @@
+'''
+5) Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação
+'''
+
+a = int(input("População A: "))
+b = int(input("População B: "))
+ta = float(input("Taxa % População A: "))
+tb = float(input("Taxa % População B: "))
+ano = 0
+
+ta1 = ta / 100
+tb2 = tb / 100
+while a <= b:
+  a += a * ta1
+  b += b * tb2
+  ano += 1
+print(ano)
