@@ -6,7 +6,6 @@ n = int(input('Digite um n°: '))
 x = 0
 y = 1
 cont = 1
-while cont <=n:
+for i in range(cont, n):
   x, y = y, y + x
-  print(' {}' .format(x), end='')
-  cont += 1
+  print('{} ' .format(x), end='')
